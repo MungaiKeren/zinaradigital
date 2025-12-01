@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zinara Digital | About & Services</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-teal': '#00043f',
+                        'blush': '#EDDFE0',
+                        'sea-blue': '#122B68',
+                        'orange': '#FF6B35',
+                        'aqua': '#122B68',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/layout.css">
 </head>
-<body>
-    
+<body class="antialiased">
+
+<!-- NAVIGATION -->
+<nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html#home" class="flex items-center">
+                <img src="images/zinara-digital-logo.png" alt="Zinara Digital Logo" class="h-10 w-auto mr-3">
+                <span class="text-2xl font-bold text-deep-teal hidden sm:block">ZINARA <span class="text-orange">DIGITAL</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html#home" class="text-gray-700 hover:text-[#122B68] transition-colors font-medium">Home</a>
+                <a href="services.html#about" class="text-gray-700 hover:text-[#122B68] transition-colors font-medium">About</a>
+                <a href="services.html#services-detail" class="text-gray-700 hover:text-[#122B68] transition-colors font-medium">Services</a>
+                <a href="work.html#ourwork" class="text-gray-700 hover:text-[#122B68] transition-colors font-medium">Our Work</a>
+                <a href="pricing.html#pricing" class="text-gray-700 hover:text-[#122B68] transition-colors font-medium">Pricing</a>
+                <a href="contact.html#contact" class="px-8 py-4 bg-orange text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-lg">Get Started</a>
+            </div>
+            <button onclick="toggleMobileMenu()" class="md:hidden p-2">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden pb-6">
+            <a href="index.html#home" onclick="toggleMobileMenu()" class="block py-3 text-gray-700 hover:text-[#122B68]">Home</a>
+            <a href="services.html#about" onclick="toggleMobileMenu()" class="block py-3 text-gray-700 hover:text-[#122B68]">About</a>
+            <a href="services.html#services-detail" onclick="toggleMobileMenu()" class="block py-3 text-gray-700 hover:text-[#122B68]">Services</a>
+            <a href="work.html#ourwork" onclick="toggleMobileMenu()" class="block py-3 text-gray-700 hover:text-[#122B68]">Our Work</a>
+            <a href="pricing.html#pricing" onclick="toggleMobileMenu()" class="block py-3 text-gray-700 hover:text-[#122B68]">Pricing</a>
+            <a href="contact.html#contact" onclick="toggleMobileMenu()" class="block mt-4 text-center px-8 py-4 bg-orange text-white font-semibold rounded-lg">Get Started</a>
+        </div>
+    </div>
+</nav>
+
+<!-- TODO: move ABOUT and WHAT WE DO sections from index.html into this page -->
+
+<script src="script/script.js"></script>
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    if (menu) {
+        menu.classList.toggle('hidden');
+    }
+}
+</script>
 </body>
 </html>
