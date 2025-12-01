@@ -67,7 +67,182 @@
     </div>
 </nav>
 
-<!-- TODO: move PRICING section from index.html into this page -->
+<!-- PRICING SECTION -->
+<section id="pricing" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="px-4 py-2 bg-[#122B68]/10 text-[#122B68] rounded-full text-sm font-semibold">PRICING</span>
+            <h2 class="text-4xl md:text-5xl font-bold text-deep-teal mb-6 mt-6">Zinara Digital Pricing — Smart Marketing for Every Growth Stage</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Currency Reference: 1 USD ≈ KSh 130 (rounded for clarity)</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12 pricing-grid">
+            <div class="pricing-card bg-white rounded-3xl p-8 relative">
+                <h3 class="text-2xl font-bold text-deep-teal mb-4">Starter Plan</h3>
+                <h4 class="text-lg font-semibold text-orange mb-4">KSh 30,000 / month (≈ USD 230 / month)</h4>
+                <p class="text-gray-600 mb-6">Perfect for Entrepreneurs & Small Businesses. Build your digital foundation, boost visibility, and start generating qualified leads. Ideal for solopreneurs, small shops, and early stage brands.</p>
+
+                <div class="pricing-content pricing-content-1" style="display: none;">
+                    <div class="mb-8">
+                        <h5 class="font-bold text-deep-teal mb-4">Includes:</h5>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Full digital audit & multi-channel setup</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Smart lead funnel design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Weekly performance reports</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Entry-level automation workflows</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>1 social media platform managed</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Foundational SEO optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Email + chat support</span>
+                            </li>
+                        </ul>
+                        <p class="text-gray-600 mt-4"><strong>Best for:</strong> Startups and entrepreneurs building early traction.</p>
+                        <p class="text-gray-600"><strong>Note:</strong> Not inclusive of paid ad spend.</p>
+                    </div>
+                </div>
+
+                <button onclick="togglePricingContent(1)" class="text-[#122B68] font-semibold mb-6 hover:text-deep-teal transition-colors pricing-toggle-1">
+                    + Read More
+                </button>
+
+                <a href="contact.html#contact" class="block w-full text-center py-4 px-6 rounded-lg font-bold bg-orange text-white hover:bg-opacity-90 shadow-lg">Request My Starter Plan</a>
+            </div>
+
+            <!-- Growth Plan (Popular) -->
+            <div class="relative bg-gradient-to-br from-orange to-orange/90 rounded-3xl border-4 border-orange p-8 text-white transform scale-105 shadow-2xl">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2">
+                    <span class="bg-deep-teal text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">MOST POPULAR</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 mt-4">Growth Plan</h3>
+                <h4 class="text-lg font-semibold text-white/90 mb-4">KSh 50,000 / month (≈ USD 385 / month)</h4>
+                <p class="text-white/90 mb-6">Most Popular — For Businesses Ready to Scale. Accelerate your growth with high performance campaigns, A/B testing, and expert optimization.</p>
+
+                <div class="pricing-content pricing-content-2" style="display: none;">
+                    <div class="mb-8">
+                        <h5 class="font-bold mb-4">Includes:</h5>
+                        <ul class="space-y-3 text-white/90">
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Everything in Starter</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Multi-channel ad & funnel management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>A/B testing & continuous optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>SEO keyword growth strategy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Up to 3× more qualified leads</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Monthly strategy & performance review</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Priority client support</span>
+                            </li>
+                        </ul>
+                        <p class="text-white/90 mt-4"><strong>Best for:</strong> Growing businesses scaling reach, conversions, and ROI.</p>
+                        <p class="text-white/90"><strong>Note:</strong> Ad spend billed separately (recommend ≥ KSh 15,000 / month).</p>
+                    </div>
+                </div>
+
+                <button onclick="togglePricingContent(2)" class="text-white font-semibold mb-6 hover:text-gray-200 transition-colors pricing-toggle-2">
+                    + Read More
+                </button>
+
+                <a href="contact.html#contact" class="block w-full text-center py-4 px-6 rounded-lg font-bold bg-white text-orange hover:bg-gray-100 shadow-lg">Let's Discuss My Growth Plan</a>
+            </div>
+
+            <!-- Scale Plan -->
+            <div class="pricing-card bg-white rounded-3xl p-8 relative">
+                <h3 class="text-2xl font-bold text-deep-teal mb-4">Scale Plan</h3>
+                <h4 class="text-lg font-semibold text-orange mb-4">From KSh 100,000+ / month (≈ USD 770 + / month)</h4>
+                <p class="text-gray-600 mb-6">Tailored for Established Brands & Enterprises. Premium full-service marketing designed for sustained, automated growth with dedicated strategic support.</p>
+
+                <div class="pricing-content pricing-content-3" style="display: none;">
+                    <div class="mb-8">
+                        <h5 class="font-bold text-deep-teal mb-4">Includes:</h5>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Everything in Growth</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Advanced retention & CRM automation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Dedicated account strategist</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Predictive analytics & AI-powered insights</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>White-glove execution & reporting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Quarterly business reviews & growth workshops</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#122B68] mr-2">•</span>
+                                <span>Custom dashboards & performance tracking</span>
+                            </li>
+                        </ul>
+                        <p class="text-gray-600 mt-4"><strong>Best for:</strong> Established brands, corporate teams, and e-commerce enterprises seeking data-driven, automated marketing systems.</p>
+                        <p class="text-gray-600"><strong>Note:</strong> Custom quote based on business size & goals.</p>
+                    </div>
+                </div>
+
+                <button onclick="togglePricingContent(3)" class="text-[#122B68] font-semibold mb-6 hover:text-deep-teal transition-colors pricing-toggle-3">
+                    + Read More
+                </button>
+
+                <a href="contact.html#contact" class="block w-full text-center py-4 px-6 rounded-lg font-bold bg-orange text-white hover:bg-opacity-90 shadow-lg">Get My Custom Plan</a>
+            </div>
+        </div>
+
+        <!-- Our Promise -->
+        <div class="max-w-3xl mx-auto bg-gradient-to-br from-[#00043f] to-[#122B68] rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl" style="animation: slideInUp 0.8s ease-out;">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Our Promise</h3>
+            <p class="text-base md:text-lg leading-relaxed mb-8 text-gray-100">
+                We tailor every strategy to your specific goals — and price it reasonably to fit your stage of growth. You'll always know exactly where your investment goes and what results to expect.
+            </p>
+            <a href="contact.html#contact" class="px-8 py-4 bg-orange text-white font-bold text-base rounded-xl hover:bg-yellow-500 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 inline-block" style="animation: bounce 2s infinite;">Let's Build Your Plan</a>
+        </div>
+    </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="bg-deep-teal text-white">
